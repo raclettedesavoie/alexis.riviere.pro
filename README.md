@@ -19,9 +19,10 @@ assets/img/favicon.svg
 
 ## Avant la mise en ligne
 
-1. **Nom de domaine.** Remplacer `https://www.VOTRE-DOMAINE.fr` partout :
+1. **Adresse du site.** Le site est en ligne sur `https://alexis.riviere-pro.workers.dev`.
+   En cas de passage sur un nom de domaine propre, remplacer cette adresse partout :
    ```
-   grep -rl "VOTRE-DOMAINE" . | xargs sed -i 's#www.VOTRE-DOMAINE.fr#www.mondomaine.fr#g'
+   grep -rl "alexis.riviere-pro.workers.dev" . | xargs sed -i 's#alexis.riviere-pro.workers.dev#www.mondomaine.fr#g'
    ```
    (sur macOS : `sed -i ''`)
 
@@ -34,8 +35,8 @@ assets/img/favicon.svg
      L'adresse doit être absolue : elle est mise à jour par la commande de l'étape 1.
    - Le champ caché `botcheck` sert d'anti-spam : il est masqué par la classe `hp`.
 
-3. **Hébergeur.** Compléter le bloc « Hébergement » de `mentions-legales.html`
-   avec le nom, l'adresse postale et le téléphone de l'hébergeur (mention obligatoire).
+3. **Hébergeur.** Le bloc « Hébergement » de `mentions-legales.html` indique Cloudflare (mention obligatoire).
+   Le mettre à jour en cas de changement d'hébergeur.
 
 4. **Vérifier** : délai de réponse annoncé (« sous 48 heures », section contact),
    et la formulation des réalisations.
